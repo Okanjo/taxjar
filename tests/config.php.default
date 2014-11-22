@@ -1,0 +1,15 @@
+<?php
+/**
+ * Example unit test config
+ * Change the values to include your real token
+ */
+
+namespace TaxJar\Api\Tests;
+
+use TaxJar\Api\Client;
+
+class UnitTestConfig {
+    public static $api = array(
+        Client::API_TOKEN => "YOUR_API_KEY"
+    );
+}

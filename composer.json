@@ -1,0 +1,31 @@
+{
+    "name": "okanjo/taxjar",
+    "description": "Okanjo TaxJar Software Development Kit",
+    "license": "MIT",
+    "homepage": "https://okanjo.com",
+    "support": {
+        "email": "support@okanjo.com",
+        "issues": "https://github.com/Okanjo/taxjar/issues",
+        "source": "https://github.com/Okanjo/taxjar"
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Kevin Fitzgerald",
+            "homepage": "http://kevinfitzgerald.net"
+        }
+    ],
+    "autoload":{
+        "psr-0":{
+            "TaxJar":"src/"
+        },
+        "classmap":[],
+        "files":[]
+    },
+    "require":{
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~3.7"
+    }
+}

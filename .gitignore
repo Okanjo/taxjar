@@ -1,0 +1,10 @@
+# Exclude project directory
+.idea
+
+# Exclude vendor directory (you gotta run `php composer.phar update` !)
+vendor
+composer.phar
+
+# Exclude the actual unit test config
+tests/config.php
+
