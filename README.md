@@ -59,7 +59,10 @@ $res = $api->getSalesTax()->where(
         \TaxJar\Api\Common\Fields::TO_ZIP => "07728",
         \TaxJar\Api\Common\Fields::TO_COUNTRY => "US",
     )
-)->execute(); // You can switch from associative de-serialization (default) to objects (do execute(false) instead)
+)->execute();
+
+// Note: You can switch from associative de-serialization (default)
+//       to objects (do execute(false) instead)
 
 if ($res->status == \TaxJar\Api\Response::HTTP_OK) {
     $amountToCollect = $res->data['amount_to_collect'];
