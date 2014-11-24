@@ -62,6 +62,7 @@ class Client {
     const PROVIDER = 'provider';
     const PROVIDER_NAME_CACHE = 'cache';
     const PROVIDER_NAME_DEFAULT = 'default';
+    const USER_AGENT = 'OkanjoTaxJarSdk/1.0';
 
     // Client options
     public $apiToken = null;

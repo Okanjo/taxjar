@@ -40,7 +40,7 @@ namespace TaxJar\Api\Query;
 
 use TaxJar\Api\Client,
     TaxJar\Exceptions\InvalidQueryException,
-    TaxJar\Api\Provider\CacheProvider,
+    TaxJar\Api\Providers\CacheProvider,
     TaxJar\Exceptions\InvalidProviderException;
 
 /**
@@ -204,6 +204,9 @@ abstract class QueryBase {
 
         // Set the api token
         $headers['Authorization'] = sprintf('Token token="%s"', $this->_api->apiToken);
+
+        // Set User Agent
+        $headers['User-Agent'] = Client::USER_AGENT;
 
         // Gather query data
 	    $data = array(
